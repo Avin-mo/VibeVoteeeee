@@ -33,10 +33,19 @@
             </div>
         </div>
 
-        <div class="buttons">
-            <button class="create">Create party</button>
-            <button class="join">Join party</button>
-        </div>
+              </div>
+
+         <div class="buttons">
+        <button class="create" onclick="linkDirector('create-party.html')">Create party</button>
+        <button class="join">Join party</button>
+    </div>
+    
+    <script>
+        function linkDirector(link) {
+            console.log(link);
+            window.location.href = link;
+        }
+    </script>
         
         <div class="credits">
             <footer>
