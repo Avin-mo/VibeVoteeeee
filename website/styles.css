@@ -1,1 +1,171 @@
+html, body {
+    background-color: #FADED2; /* Lumber */
+    color: #79313B; /* Milk Chocolate */
+    font-family: 'Agdasima', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
+h2 {
+    text-align: center;
+    font-family: 'Agdasima', cursive;
+    font-size: 30px;
+    margin: auto;
+    padding-top: 3%;
+    color: #FADED2;
+    text-shadow: 5px 5px 5px #6a564d;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Julee', cursive;
+    font-size: 60px;
+    margin-top: 1%;
+    color: #FADED2;
+    text-shadow: 5px 5px 5px #6a564d;
+
+}
+
+.container1 {
+    background-image: url(/images/BG1.png);
+    background-size: contain; /* Ensures the width fits without stretching height */
+    background-position: top center; /* Centers the image at the top */
+    background-repeat: no-repeat; /* Prevents repetition */
+    width: 550px; /* Full width */
+    height: 400px; /* Adjust height based on design preference */
+    padding: 10px 0;
+    margin: auto;
+}
+
+
+.container2 {
+    width: 370px;  /* Adjust width */
+    height: 50px; /* Adjust height */
+    background-color: #fccbb5; /* Background color */
+    border-radius: 50px; /* Makes the box oval */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #79313B;
+    text-align: center;
+    font-family: 'Agdasima-Bold';
+    margin-top: -170px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    font-size: larger;
+}
+
+
+.tutorial {
+    font-family: 'Agdasima';
+    width: 550px;
+    height: 400px;
+    margin: auto;
+}
+
+.circle1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    background-color: #55768C;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 17%;
+    margin-top: 5%;
+    margin-bottom: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 20px #dc97a5;
+}
+
+.ll1 {
+    width: auto;
+    height: auto;
+    color:#71222d;
+}
+
+.circle2 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #dc97a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 56%;
+    margin-top: -10%;
+    margin-bottom: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 20px #79313B;
+}
+
+.ll2 {
+    width: 130px;
+    height: auto;
+}
+
+.circle3 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #b83556;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -6%;
+    margin-bottom: auto;
+    margin-right: 50%;
+    box-shadow: 5px 5px 20px #55768C;
+}
+
+.ll3 {
+    width: 130px;
+    height: auto;
+    color:#5f2c33
+}
+
+.circle4 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #b83556;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-top: -6%;
+    margin-bottom: auto;
+    margin-right: 50%;
+    box-shadow: 5px 5px 20px #55768C;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center horizontally */
+    gap: 10px; /* Space between buttons */
+}
+
+.create, .join {
+    width: 90px;
+    height: 30px;
+    background-color: #e1e1fd;
+}
+
+@font-face {
+    font-family: 'Julee';
+    src: url('/fonts/Julee-Regular.ttf');
+    font-family: 'ABeeZee';
+    src: url('/fonts/ABeeZee-Regular.ttf');
+    font-family: 'Agdasima';
+    src: url('/fonts/Agdasima-Regular.ttf');
+    font-family: 'Agdasima-Bold';
+    src: url('/fonts/Agdasima-Bold.ttf');
+}
