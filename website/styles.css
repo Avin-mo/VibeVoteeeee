@@ -192,21 +192,23 @@ h1 {
     box-shadow: 5px 5px 20px #79313B;
 }
 
-hr {
-    background-color: #79313B;
-    border-color: #79313B;
-  }
-
-.bottom-line {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .credits {
+    background-color: #dc97a5;
+    width: 550px; /* Full width */
+    height: 90px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     font-family: 'Agdasima';
+    background-position: bottom-center;
     text-align: center;
-    margin-bottom: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
 }
+
 
 @font-face {
     font-family: 'Julee';
