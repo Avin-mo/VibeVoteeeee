@@ -74,8 +74,8 @@ h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 17%;
-    margin-top: 5%;
+    margin-left: 25%;
+    margin-top: 6%;
     margin-bottom: auto;
     margin-right: auto;
     box-shadow: 5px 5px 20px #dc97a5;
@@ -118,7 +118,7 @@ h1 {
     justify-content: center;
     text-align: center;
     margin-left: auto;
-    margin-top: -6%;
+    margin-top: -2%;
     margin-bottom: auto;
     margin-right: 50%;
     box-shadow: 5px 5px 20px #55768C;
@@ -131,19 +131,41 @@ h1 {
 }
 
 .circle4 {
-    width: 140px;
-    height: 140px;
+    width: 170px;
+    height: 170px;
     border-radius: 50%;
-    background-color: #b83556;
+    background-color: #55768C;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-left: auto;
-    margin-top: -6%;
+    margin-top: -4%;
     margin-bottom: auto;
-    margin-right: 50%;
-    box-shadow: 5px 5px 20px #55768C;
+    margin-right: 13%;
+    box-shadow: 5px 5px 20px #dc97a5;
+}
+
+.ll4 {
+    width: auto;
+    height: auto;
+    color:#71222d;
+}
+
+.circle5 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #dc97a5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 16%;
+    margin-top: -10%;
+    margin-bottom: 10%;
+    margin-right: auto;
+    box-shadow: 5px 5px 20px #79313B;
 }
 
 .buttons {
@@ -151,12 +173,30 @@ h1 {
     flex-direction: column; /* Stack buttons vertically */
     align-items: center; /* Center horizontally */
     gap: 10px; /* Space between buttons */
+    margin-top: 250px;
+    margin-bottom: 100px auto;
 }
 
 .create, .join {
     width: 90px;
     height: 30px;
     background-color: #e1e1fd;
+}
+
+hr {
+    background-color: #79313B;
+    border-color: #79313B;
+  }
+
+.bottom-line {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.credits {
+    font-family: 'Agdasima';
+    text-align: center;
+    margin-bottom: 50px auto;
 }
 
 @font-face {
