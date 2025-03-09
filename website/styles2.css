@@ -1,0 +1,159 @@
+html, body {
+    background-color: #FADED2; 
+    color: #79313B;
+}
+
+.disk {
+    width: 170px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 1;
+    left: 2;
+    z-index: 1;
+    margin-left: 110px;
+    margin-top: -10px;
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.cover {
+    width: 175px; 
+    height: auto;
+    position: absolute;
+    top: 6px;  
+    left: 15px;
+    z-index: 2; 
+    margin-top: 22px;
+    margin-left: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    margin-left: 57%;
+    margin-top: 40px;
+    font-family: 'Julee';
+}
+
+.song-info {
+    margin-left: 57%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center; /* Center horizontally */
+    margin-top: 90%;
+    margin-bottom: 5%;
+    margin-right: 20px;
+    margin-left: 80%;
+    transition: 0.4s;
+}
+
+.end {
+    width: 100%; 
+    height: 30px;
+    border-radius: 20px;
+    border: 3px solid #c9122b;
+    background-color: #c9122b;
+    color: #FCE5D8;
+    font-family: 'Agdasima-Bold';
+    font-size: 15px;
+    box-shadow: 5px 5px 20px #79313B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.end:hover {
+    background-color: #FCE5D8;
+    color: #c9122b;
+}
+
+.popup1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup1-content {
+    height: 150px;
+    width: 560px;
+    background: #FADED2;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.popup1-content-heading {
+    font-family: 'Agdasima';
+    color:#5f2c33;
+    font-size: 32px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.yes, .no {
+    width: 70px; 
+    height: 30px;
+    border-radius: 20px;
+    border: 3px solid #79313B;
+    background-color: #79313B;
+    color: #FCE5D8;
+    font-family: 'Agdasima-Bold';
+    font-size: 23px;
+    box-shadow: 5px 5px 20px #79313B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.exit {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center horizontally */
+    gap: 6px;
+    margin-top: 6px;
+    margin-bottom: 100px;
+    transition: 0.4s;    
+}
+
+.yes:hover {
+    background-color: #FCE5D8;
+    color: #79313B;
+}
+
+.no:hover {
+    background-color: #FCE5D8;
+    color: #79313B;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+@font-face {
+    font-family: 'Julee';
+    src: url('/fonts/Julee-Regular.ttf');
+    font-family: 'ABeeZee';
+    src: url('/fonts/ABeeZee-Regular.ttf');
+    font-family: 'Agdasima';
+    src: url('/fonts/Agdasima-Regular.ttf');
+    font-family: 'Agdasima-Bold';
+    src: url('/fonts/Agdasima-Bold.ttf');
+}
