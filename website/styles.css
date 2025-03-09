@@ -1,6 +1,6 @@
 html, body {
-    background-color: #FADED2; /* Lumber */
-    color: #79313B; /* Milk Chocolate */
+    background-color: #FADED2; 
+    color: #79313B;
     font-family: 'Agdasima', sans-serif;
     text-align: center;
     margin: 0;
@@ -175,22 +175,130 @@ h1 {
     gap: 10px; /* Space between buttons */
     margin-top: 250px;
     margin-bottom: 100px auto;
+    transition: 0.4s;
 }
+
 
 .create, .join {
     width: 200px; 
     height: 60px;
     border-radius: 40px;
     border: 3px solid #79313B;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #79313B;
     color: #FCE5D8;
     font-family: 'Agdasima-Bold';
     font-size: 25px;
     box-shadow: 5px 5px 20px #79313B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
+
+.create:hover {
+    background-color: #FCE5D8;
+    color: #79313B;
+}
+
+.join:hover {
+    background-color: #FCE5D8;
+    color: #79313B;
+}
+
+.popup1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup1-content {
+    height: 360px;
+    width: 560px;
+    background: #FADED2;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.note-icon {
+    margin-right: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    width: 60px;
+    height: 60px;
+}
+
+.exit-icon1, .exit-icon2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+
+}
+
+.popup1-content-heading {
+    font-family: 'Agdasima';
+    color:#5f2c33;
+    font-size: 40px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.popup1-content-text {
+    font-family: 'Agdasima';
+    color:#5f2c33;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+input {
+    margin: 20px auto;
+    display: block;
+    width: 40%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+
+.popup2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup2-content {
+    height: 360px;
+    width: 560px;
+    background: #FADED2;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.popup2-content-text {
+    font-family: 'Agdasima';
+    color:#5f2c33;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+
 
 .credits {
     background-color: #dc97a5;
