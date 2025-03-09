@@ -141,6 +141,45 @@ h1 {
     color: #79313B;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .disk {
+        width: 100px;
+        margin-left: 50px;
+        margin-top: -10px;
+        animation-name: spin;
+        animation-timing-function: linear;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+    
+    .cover {
+        width: 103px;
+        margin-top: 23px;
+        margin-left: 1px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    h1 {
+        margin-left: 57%;
+        margin-top: 40px;
+        font-family: 'Julee';
+    }
+    
+    .song-info {
+        margin: auto;
+    }
+    
+    .end {
+        height: 50px;
+    }
+
+    .popup1-content {
+        height: 200px;
+    }
+}
+
+
 @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
