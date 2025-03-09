@@ -177,6 +177,10 @@ h1 {
     .popup1-content {
         height: 200px;
     }
+
+    .buttons {
+        text-align: center;
+    }
 }
 
 
