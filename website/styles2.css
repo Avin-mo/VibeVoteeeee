@@ -76,8 +76,7 @@ h1 {
 
 .buttons {
     display: flex;
-    align-items: center; /* Center horizontally */
-    margin-top: 90%;
+    align-items: center;
     margin-bottom: 5%;
     margin-right: 20px;
     margin-left: 80%;
@@ -107,13 +106,15 @@ h1 {
 
 .popup1 {
     background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
+    left: 0;
     display: none;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
 .popup1-content {
@@ -174,8 +175,43 @@ h1 {
     color: #79313B;
 }
 
+.vote-container {
+    width: 300px;
+    padding: 10px;
+    background: #FADED2;
+    border-radius: 8px;
+}
 
-@media only screen and (max-width: 600px) {
+.track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.track {
+    display: flex;
+    justify-content: space-between;
+    background: #ffa0a0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+button.upvote {
+    background: #55768C;
+    color: #FADED2;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button.upvote:hover {
+    background: #55768C;
+}
+
+
+@media only screen and (max-width: 768px) {
     .disk {
         width: 100px;
         margin-left: 50px;
@@ -195,7 +231,8 @@ h1 {
     }
     
     .song-info {
-        margin: auto;
+        margin-top: 40px;
+        margin-left: 0;
     }
     
     .end {
@@ -209,9 +246,19 @@ h1 {
     .buttons {
         text-align: center;
     }
+
+    .vote-container {
+        width: 300px;
+        padding: 10px;
+        background: #FADED2;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+    }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 765px) {
     .disk {
         width: 350px;
         margin-left: 156px;
@@ -231,7 +278,9 @@ h1 {
         font-size: 70px;
     }
     .song-info {
-        margin-top: 1%;
+        margin-top: 10%;
+        margin-bottom: 4%;
+        margin-left: 63%;
     }
     
     .end {
@@ -247,7 +296,6 @@ h1 {
     }
 
     .add-songs {
-        margin-top: 155px;
         height: fit-content;
     }
     
@@ -257,6 +305,16 @@ h1 {
         margin-bottom: 10px;
         margin-top: 10px;
         font-size: 30px;
+    }
+
+    .vote-container {
+        width: 300px;
+        padding: 10px;
+        background: #FADED2;
+        border-radius: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
     }
 }
 
