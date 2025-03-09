@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Host's Party Room</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="vinyl">
+        <img class="cover" src="https://i.pinimg.com/736x/51/81/3b/51813b6368265f3e3bf0e4e10d7800ae.jpg" alt="cover">
+        <img class="disk" src="https://pngimg.com/d/vinyl_PNG46.png" alt="disk">
+    </div>
+    <h1 class="heading1">Now Playing</h1>
+    <div class="song-info">
+        <h2>song name</h2>
+        <h3>artist's name</h3>
+    </div>
+
+    <div class="buttons">
+        <a href="#" class="end">End Session</a>
+    </div>
+
+    <div class="popup1">
+        <div class="popup1-content">
+            <h3 class="popup1-content-heading">Are you sure you want to end the session?</h3>
+            <div class="exit">
+                <a href="mainpage.html" class="yes">Yes</a>
+                <a href="#" class="no">No</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".end").forEach(button => {
+                button.addEventListener("click", function () {
+                    document.querySelector(".popup1").style.display = "flex";
+                });
+            });
+
+            document.querySelector(".no").addEventListener("click", function () {
+                document.querySelector(".popup1").style.display = "none";
+            });
+
+    </script>
+
+
+</body>
+</html>
