@@ -1,0 +1,53 @@
+{
+  "9mst6m": {
+    "host": "LBCrb9VQizBxvZq3AAAD",
+    "queue": [],
+    "users": [
+      "LBCrb9VQizBxvZq3AAAD"
+    ],
+    "nowPlaying": null,
+    "history": []
+  },
+  "9vtmvw": {
+    "host": "uimv9vJ2zYzzPAraAAAV",
+    "queue": [
+      {
+        "id": 1741533388782,
+        "title": "Test Song",
+        "platform": "Spotify",
+        "votes": 0
+      }
+    ],
+    "users": [
+      "uimv9vJ2zYzzPAraAAAV"
+    ],
+    "nowPlaying": null,
+    "history": []
+  },
+  "b21c3o": {
+    "host": "Wb8_OB-64bSYJ1zgAAAD",
+    "queue": [],
+    "users": [
+      "Wb8_OB-64bSYJ1zgAAAD"
+    ],
+    "nowPlaying": null,
+    "history": []
+  },
+  "y7vesa": {
+    "host": "PqNPNw0uRo1QjcjvAAAB",
+    "queue": [
+      {
+        "id": "HQBG42Ggtac",
+        "title": "Test Song",
+        "platform": "Spotify",
+        "votes": 0,
+        "link": "https://www.youtube.com/watch?v=HQBG42Ggtac&t=1772s"
+      }
+    ],
+    "users": [
+      "PqNPNw0uRo1QjcjvAAAB"
+    ],
+    "nowPlaying": null,
+    "history": []
+  }
+}
