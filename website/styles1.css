@@ -24,7 +24,6 @@ h1 {
     margin-top: 1%;
     color: #FADED2;
     text-shadow: 5px 5px 5px #6a564d;
-
 }
 
 .container1 {
@@ -178,7 +177,6 @@ h1 {
     transition: 0.4s;
 }
 
-
 .create, .join {
     width: 200px; 
     height: 60px;
@@ -193,6 +191,7 @@ h1 {
     align-items: center;
     justify-content: center;
     margin: auto;
+    cursor: pointer;
 }
 
 .create:hover {
