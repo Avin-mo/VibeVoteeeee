@@ -41,6 +41,39 @@ h1 {
     margin-left: 57%;
 }
 
+
+.add-songs {
+    background-color: #55768C;
+    width: 100%;
+    height: auto;  /* Change to auto so it expands with content */
+    display: flex;
+    flex-direction: column;  /* Stack elements vertically */
+    justify-content: center;  
+    align-items: center;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.add-songs-heading {
+    text-align: center;
+    color: #ffb393;
+    margin-bottom: 10px;
+    font-size: 20px; 
+}
+
+
+.input-link {
+    background-color: #FADED2;
+    width: 80%;  /* Make it take more space */
+    max-width: 400px; /* Limit width on larger screens */
+    padding: 8px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+
 .buttons {
     display: flex;
     align-items: center; /* Center horizontally */
@@ -147,17 +180,12 @@ h1 {
         width: 100px;
         margin-left: 50px;
         margin-top: -10px;
-        animation-name: spin;
-        animation-timing-function: linear;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
     }
     
     .cover {
         width: 103px;
         margin-top: 23px;
         margin-left: 1px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     }
     
     h1 {
@@ -180,6 +208,55 @@ h1 {
 
     .buttons {
         text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .disk {
+        width: 350px;
+        margin-left: 156px;
+        margin-top: -10px;
+    }
+    
+    .cover {
+        width: 350px;
+        margin-top: 23px;
+        margin-left: 1px;
+    }
+    
+    h1 {
+        margin-left: 53%;
+        margin-top: 40px;
+        font-family: 'Julee';
+        font-size: 70px;
+    }
+    .song-info {
+        margin-top: 1%;
+    }
+    
+    .end {
+        height: 50px;
+    }
+
+    .popup1-content {
+        height: 200px;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+
+    .add-songs {
+        margin-top: 155px;
+        height: fit-content;
+    }
+    
+    .add-songs-heading {
+        text-align: center;
+        color: #ffb393;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 30px;
     }
 }
 
