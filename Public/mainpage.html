@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VibeVote</title>
+        <link rel="stylesheet" href="styles1.css">
+    </head>
+    <body>
+        <div class="container1"></div>
+
+        <div class="container2">
+            <p>The ultimate crowd-controlled music experience!</p>
+        </div>
+
+        <div class="tutorial">
+            <div class="circle1">
+                <p class="ll1">No DJ? No problem!</p>
+            </div>
+            <div class="circle2">
+                <p class="ll2">Create a party or join one by entering the room code.</p>
+            </div>
+            <div class="circle3">
+                <p class="ll3">Add songs to the queue from Spotify.</p>
+            </div>
+            <div class="circle4">
+                <p class="ll4">Upvote songs to decide the next track.</p>
+            </div>
+            <div class="circle5">
+                <p class="ll5">The top-voted song plays automatically—keeping the party going non-stop!</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="#" class="create">Create Party</a>
+            <a href="#" class="join">Join Party</a>
+        </div>
+
+        <div class="popup1">
+            <div class="popup1-content">
+                <img class="exit-icon1" src="/images/exit.png">
+                <img class="note-icon" src="/images/icon.png">
+                <h3 class="popup1-content-heading">Here's you're room code</h3>
+                <h3 class="room-code">------</h3>
+                <div class="create-room">
+                    <form method="post" action='#'>
+                        <fieldset>
+                            <label for="password">Please create a password for your room<input class="password" id="password" type="text" required minlength="8" /></label>
+                        </fieldset>
+                        <input class="create" type="submit" value="Create Party" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup2">
+            <div class="popup2-content">
+                <img class="exit-icon2" src="/images/exit.png">
+                <img class="note-icon" src="/images/icon.png">
+                <h3>To join a party room, please enter:</h3>
+                <div class="join-room">
+                    <form method="post" action='#'>
+                        <fieldset>
+                            <label for="code">Room Code:<input class="code" id="code" type="text" required /></label>
+                            <label for="code">Password:<input class="code" id="code" type="text" required minlength="8" /></label>
+                        </fieldset>
+                        <input class="join" type="submit" value="Join Party" />
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.querySelectorAll(".create").forEach(button => {
+                button.addEventListener("click", function () {
+                    document.querySelector(".popup1").style.display = "flex";
+                });
+            });
+
+            document.querySelector(".exit-icon1").addEventListener("click", function () {
+                document.querySelector(".popup1").style.display = "none";
+            });
+
+
+            document.querySelectorAll(".join").forEach(button => {
+                button.addEventListener("click", function () {
+                    document.querySelector(".popup2").style.display = "flex";
+                });
+            });
+
+            document.querySelector(".exit-icon2").addEventListener("click", function () {
+                document.querySelector(".popup2").style.display = "none";
+            });
+        </script>
+
+        <div class="credits">
+            <footer>
+                <p class="footer-title">Created by</p>
+                <p class="footer-note">Avin Motie, Valentina Canto, Alicia Jiang</p>
+            </footer>
+        </div>
+
+        <section class="stage">
+            <figure class="ball bubble">
+            </figure>
+        </section>
+    </body>
+</html>
