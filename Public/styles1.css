@@ -10,11 +10,11 @@ html, body {
 
 .container1 {
     background-image: url(/images/BG1.png);
-    background-size: contain; /* Ensures the width fits without stretching height */
-    background-position: top center; /* Centers the image at the top */
-    background-repeat: no-repeat; /* Prevents repetition */
-    width: 100%; /* Full width */
-    height: 100vw; /* Adjust height based on design preference */
+    background-size: contain; 
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vw;
     padding: 10px 0;
     margin: auto;
 }
@@ -23,7 +23,7 @@ html, body {
 .container2 {
     width: 80%;  /* Adjust width */
     height: 50px; /* Adjust height */
-    background-color: #fccbb5; /* Background color */
+    background-color: #f4bfa7; /* Background color */
     border-radius: 50px; /* Makes the box oval */
     display: flex;
     align-items: center;
@@ -39,114 +39,87 @@ html, body {
 }
 
 
-.tutorial {
+.circles {
     font-family: 'Agdasima';
     width: 550px;
     height: 400px;
     margin: auto;
 }
 
-.circle1 {
-    width: 100px;
-    height: 100px;
+/* Shared circle styles */
+.circle1, .circle2, .circle3, .circle4, .circle5 {
     border-radius: 50%;
     display: flex;
-    background-color: #55768C;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-left: 25%;
-    margin-top: 6%;
     margin-bottom: auto;
     margin-right: auto;
-    box-shadow: 5px 5px 20px #dc97a5;
 }
 
-.ll1 {
-    width: auto;
-    height: auto;
-    color:#71222d;
+/* Individual circle styles */
+.circle1 {
+    width: 100px;
+    height: 100px;
+    background-color: #55768C;
+    margin-left: 25%;
+    margin-top: 6%;
+    box-shadow: 5px 5px 20px #dc97a5;
 }
 
 .circle2 {
     width: 140px;
     height: 140px;
-    border-radius: 50%;
     background-color: #dc97a5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     margin-left: 56%;
     margin-top: -10%;
-    margin-bottom: auto;
-    margin-right: auto;
     box-shadow: 5px 5px 20px #79313B;
-}
-
-.ll2 {
-    width: 130px;
-    height: auto;
 }
 
 .circle3 {
     width: 140px;
     height: 140px;
-    border-radius: 50%;
     background-color: #b83556;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     margin-left: auto;
     margin-top: -2%;
-    margin-bottom: auto;
     margin-right: 50%;
     box-shadow: 5px 5px 20px #55768C;
-}
-
-.ll3 {
-    width: 130px;
-    height: auto;
-    color:#5f2c33
 }
 
 .circle4 {
     width: 170px;
     height: 170px;
-    border-radius: 50%;
     background-color: #55768C;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     margin-left: auto;
     margin-top: -4%;
-    margin-bottom: auto;
     margin-right: 13%;
     box-shadow: 5px 5px 20px #dc97a5;
-}
-
-.ll4 {
-    width: auto;
-    height: auto;
-    color:#71222d;
 }
 
 .circle5 {
     width: 200px;
     height: 200px;
-    border-radius: 50%;
     background-color: #dc97a5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     margin-left: 16%;
     margin-top: -10%;
     margin-bottom: 10%;
-    margin-right: auto;
     box-shadow: 5px 5px 20px #79313B;
+}
+
+/* Circle text styles */
+.ll1, .ll4 {
+    width: auto;
+    height: auto;
+    color: #71222d;
+}
+
+.ll2, .ll3 {
+    width: 130px;
+    height: auto;
+}
+
+.ll3 {
+    color: #5f2c33;
 }
 
 
@@ -154,15 +127,15 @@ html, body {
 
 .buttons {
     display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    align-items: center; /* Center horizontally */
-    gap: 10px; /* Space between buttons */
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
     margin-top: 250px;
     margin-bottom: 100px auto;
     transition: 0.4s;
 }
 
-.create, .join {
+button.create, button.join {
     width: 45%; 
     height: 60px;
     border-radius: 40px;
@@ -179,17 +152,18 @@ html, body {
     cursor: pointer;
 }
 
-.create:hover {
+button.create:hover {
     background-color: #FCE5D8;
     color: #79313B;
 }
 
-.join:hover {
+button.join:hover {
     background-color: #FCE5D8;
     color: #79313B;
 }
 
-.popup1 {
+
+.popup1, .popup2 {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100vh;
@@ -200,15 +174,13 @@ html, body {
     align-items: center;
 }
 
-.popup1-content {
+.popup1-content, .popup2-content {
     height: 360px;
     width: 560px;
     background: #FADED2;
     padding: 20px;
     border-radius: 5px;
     position: relative;
-    font-family: 'Agdasima';
-    color: #79313B;
 }
 
 .note-icon {
@@ -232,17 +204,19 @@ html, body {
 
 }
 
-.popup1-content-heading {
+
+.popup1-content-heading, .popup1-content-text, .popup2-content-text {
     font-family: 'Agdasima';
-    color:#5f2c33;
+    color: #5f2c33;
+}
+
+.popup1-content-heading {
     font-size: 40px;
     text-align: center;
     margin-top: -35px;
 }
 
 .popup1-content-text {
-    font-family: 'Agdasima';
-    color:#5f2c33;
     font-size: 20px;
     margin-top: -20px;
 }
@@ -272,29 +246,8 @@ label {
     margin-bottom: -2px;
 }
 
-.popup2 {
-    background-color: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup2-content {
-    height: 360px;
-    width: 560px;
-    background: #FADED2;
-    padding: 20px;
-    border-radius: 5px;
-    position: relative;
-}
 
 .popup2-content-text {
-    font-family: 'Agdasima';
-    color:#5f2c33;
     font-size: 20px;
     text-align: center;
     margin: auto;
@@ -303,7 +256,6 @@ label {
 .code {
     margin-top: 2px;
 }
-
 
 
 
@@ -322,22 +274,17 @@ label {
     color: black;
 }
 
+
 @media only screen and (max-width: 600px) {
     .container1 {
-        width: 100%;
         margin-bottom: 150px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .container2 {
-        width: 80%;
         font-size: 16px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
-    .tutorial {
+    .circles {
         flex-direction: column;
         width: 100%;
     }
@@ -385,22 +332,13 @@ label {
 
 
 @media only screen and (min-width: 992px) {
-    .container1 {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     .container2 {
-        width: 80%;
         height: 60px;
         font-size: 30px;
-        margin-left: auto;
-        margin-right: auto;
         margin-top: -870px;
     }
 
-    .tutorial {
+    .circles {
         flex-direction: column;
         width: 100%;
         margin-top: -50px;
