@@ -1,4 +1,4 @@
-// pop up for guest room
+// pop up for party room
 document.querySelectorAll(".end").forEach(button => {
     button.addEventListener("click", function () {
         document.querySelector(".popup1").style.display = "flex";
@@ -9,16 +9,18 @@ document.querySelector(".no").addEventListener("click", function () {
     document.querySelector(".popup1").style.display = "none";
 });
 
+document.querySelector(".yes").addEventListener("click", function () {
+    window.location.href = "mainpage.html";
+});
 
-// pop up for host room
-document.querySelectorAll(".end").forEach(button => {
+document.querySelectorAll(".add-songs-button").forEach(button => {
     button.addEventListener("click", function () {
-        document.querySelector(".popup1").style.display = "flex";
+        document.querySelector(".add-song-popup").style.display = "flex";
     });
 });
 
-document.querySelector(".no").addEventListener("click", function () {
-    document.querySelector(".popup1").style.display = "none";
+document.querySelector(".cancel").addEventListener("click", function () {
+    document.querySelector(".add-song-popup").style.display = "none";
 });
 
 
