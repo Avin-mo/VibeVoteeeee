@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
+
     <div class="vinyl">
         <img class="cover" src="https://i.pinimg.com/736x/51/81/3b/51813b6368265f3e3bf0e4e10d7800ae.jpg" alt="cover">
         <img class="disk" src="https://pngimg.com/d/vinyl_PNG46.png" alt="disk">
     </div>
+
     <h1 class="heading1">Now Playing</h1>
+    
     <div class="song-info">
         <h2>Espresso</h2>
         <h3>by Sabrina Carpenter</h3>
     </div>
 
-    <div class="add-songs">
-        <h3 class="add-songs-heading">Add songs from spotify:</h3>
-        <input class="input-link" type="text" placeholder="Song Link">
+    <div class="add-songs-button">
+        <button class="add-songs-button">Add Songs</button>
     </div>
 
     <div class="vote-container">
@@ -59,16 +61,26 @@
     </div>
 
     <div class="buttons">
-        <a href="#" class="end">End Session</a>
+        <button class="end">End Session</button>
     </div>
 
+    <!-- end session popup -->
     <div class="popup1">
         <div class="popup1-content">
             <h3 class="popup1-content-heading">Are you sure you want to end the session?</h3>
             <div class="exit">
-                <a href="mainpage.html" class="yes">Yes</a>
-                <a href="#" class="no">No</a>
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
             </div>
+        </div>
+    </div>
+
+    <!--add songs popup-->
+    <div class="add-song-popup">
+        <div class="add-song-popup-content">
+            <h3 class="add-songs-heading">Add songs from spotify:</h3>
+            <input class="input-link" type="text" placeholder="Song Link">
+            <button class="cancel">Cancel</button>
         </div>
     </div>
 
