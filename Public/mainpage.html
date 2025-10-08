@@ -6,6 +6,7 @@
         <title>VibeVote</title>
         <link rel="stylesheet" href="styles1.css">
     </head>
+
     <body>
         <div class="container1"></div>
 
@@ -13,7 +14,8 @@
             <p>The ultimate crowd-controlled music experience!</p>
         </div>
 
-        <div class="tutorial">
+        
+        <div class="circles">
             <div class="circle1">
                 <p class="ll1">No DJ? No problem!</p>
             </div>
@@ -31,11 +33,13 @@
             </div>
         </div>
 
+
         <div class="buttons">
-            <a href="#" class="create">Create Party</a>
-            <a href="#" class="join">Join Party</a>
+            <button class="create">Create Party</button>
+            <button class="join">Join Party</button>
         </div>
 
+        <!--create party popup-->
         <div class="popup1">
             <div class="popup1-content">
                 <img class="exit-icon1" src="/images/exit.png">
@@ -47,12 +51,13 @@
                         <fieldset>
                             <label for="password">Please create a password for your room<input class="password" id="password" type="text" required minlength="8" /></label>
                         </fieldset>
-                        <input class="create" type="submit" value="Create Party" />
+                        <button class="create">Create Party</button>
                     </form>
                 </div>
             </div>
         </div>
 
+        <!--join party popup-->
         <div class="popup2">
             <div class="popup2-content">
                 <img class="exit-icon2" src="/images/exit.png">
@@ -62,9 +67,9 @@
                     <form method="post" action='#'>
                         <fieldset>
                             <label for="code">Room Code:<input class="code" id="code" type="text" required /></label>
-                            <label for="code">Password:<input class="code" id="code" type="text" required minlength="8" /></label>
+                            <label for="code">Password:<input class="code" id="code" type="text" required /></label>
                         </fieldset>
-                        <input class="join" type="submit" value="Join Party" />
+                        <button class="join">Join Party</button>
                     </form>
                 </div>
             </div>
@@ -93,16 +98,15 @@
             });
         </script>
 
-        <div class="credits">
-            <footer>
+        <footer class="credits">
                 <p class="footer-title">Created by</p>
                 <p class="footer-note">Avin Motie, Valentina Canto, Alicia Jiang</p>
-            </footer>
-        </div>
+        </footer>
 
         <section class="stage">
             <figure class="ball bubble">
             </figure>
         </section>
+
     </body>
 </html>
