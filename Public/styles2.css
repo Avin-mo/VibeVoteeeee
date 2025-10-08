@@ -8,14 +8,12 @@ html, body {
     height: auto;
     object-fit: cover;
     position: absolute;
-    top: 1;
-    left: 2;
+    top: 40px;
+    left: 14px;
     z-index: 1;
-    margin-left: 110px;
-    margin-top: -10px;
     animation-name: spin;
     animation-timing-function: linear;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -25,9 +23,7 @@ html, body {
     position: absolute;
     top: 6px;  
     left: 15px;
-    z-index: 2; 
-    margin-top: 22px;
-    margin-left: 20px;
+    z-index: 2;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -41,36 +37,33 @@ h1 {
     margin-left: 57%;
 }
 
-
 .add-songs {
-    background-color: #55768C;
-    width: 100%;
-    height: auto;  /* Change to auto so it expands with content */
     display: flex;
-    flex-direction: column;  /* Stack elements vertically */
-    justify-content: center;  
     align-items: center;
-    padding-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.add-songs-heading {
+    margin: auto;
+    transition: 0.4s;
     text-align: center;
-    color: #ffb393;
-    margin-bottom: 10px;
-    font-size: 20px; 
 }
 
+.add-songs-button button {
+    width: 100%; 
+    height: 50px;
+    border-radius: 20px;
+    border: 3px solid #55768C;
+    background-color: #55768C;
+    color: #79313B;
+    font-family: 'Agdasima-Bold';
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 
-.input-link {
+.add-songs-button button:hover {
     background-color: #FADED2;
-    width: 80%;  /* Make it take more space */
-    max-width: 400px; /* Limit width on larger screens */
-    padding: 8px;
-    border: 1px solid gray;
-    text-align: center;
+    border: 3px solid #55768C;
+    color: #55768C;
 }
 
 
@@ -81,9 +74,10 @@ h1 {
     margin-right: 20px;
     margin-left: 80%;
     transition: 0.4s;
+    text-align: center;
 }
 
-.end {
+button.end {
     width: 100%; 
     height: 30px;
     border-radius: 20px;
@@ -99,12 +93,14 @@ h1 {
     margin: auto;
 }
 
-.end:hover {
+button.end:hover {
     background-color: #FCE5D8;
     color: #c9122b;
 }
 
-.popup1 {
+
+/* Shared popup styles */
+.add-song-popup, .popup1 {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100vw;
     height: 100vh;
@@ -117,26 +113,44 @@ h1 {
     z-index: 9999;
 }
 
-.popup1-content {
+.add-song-popup-content, .popup1-content {
     height: 150px;
     width: 560px;
     background: #FADED2;
     padding: 20px;
     border-radius: 5px;
+}
+
+.add-song-popup-content {
+    position: center;
+}
+
+.popup1-content {
     position: relative;
 }
 
-
-.popup1-content-heading {
+/* Shared heading styles */
+.add-songs-heading, .popup1-content-heading {
     font-family: 'Agdasima';
-    color:#5f2c33;
+    color: #5f2c33;
     font-size: 32px;
     text-align: center;
     margin: auto;
 }
 
+.input-link {
+    background-color: #FADED2;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+    padding: 8px;
+    border: 1px solid #55768C;
+    text-align: center;
+    display: block;
+}
 
-.yes, .no {
+
+button.yes, button.no, button.cancel {
     width: 70px; 
     height: 30px;
     border-radius: 20px;
@@ -165,12 +179,7 @@ h1 {
     transition: 0.4s;    
 }
 
-.yes:hover {
-    background-color: #FCE5D8;
-    color: #79313B;
-}
-
-.no:hover {
+button.yes:hover, button.no:hover, button.cancel:hover {
     background-color: #FCE5D8;
     color: #79313B;
 }
@@ -236,7 +245,7 @@ button.upvote {
         margin-left: 0;
     }
     
-    .end {
+    button.end {
         height: 50px;
     }
 
@@ -244,15 +253,7 @@ button.upvote {
         height: 200px;
     }
 
-    .buttons {
-        text-align: center;
-    }
-
     .vote-container {
-        width: 300px;
-        padding: 10px;
-        background: #FADED2;
-        border-radius: 8px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 2%;
@@ -284,7 +285,7 @@ button.upvote {
         margin-left: 63%;
     }
     
-    .end {
+    button.end {
         height: 50px;
     }
 
@@ -292,9 +293,6 @@ button.upvote {
         height: 200px;
     }
 
-    .buttons {
-        text-align: center;
-    }
 
     .add-songs {
         height: fit-content;
