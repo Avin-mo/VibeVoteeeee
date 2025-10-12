@@ -28,13 +28,16 @@ html, body {
 }
 
 h1 {
+    font-size: 30px;
     margin-left: 57%;
     margin-top: 40px;
+    margin-bottom: -30px;
     font-family: 'Julee';
 }
 
 .song-info {
     margin-left: 57%;
+    text-align: center;
 }
 
 .add-songs {
