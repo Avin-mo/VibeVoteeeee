@@ -15,11 +15,28 @@
 
     <h1>You are hosting</h1>
     
-    <div class="song-info">
-        <h2 class="heading1">Now Playing:</h2>
-        <h3>song title</h3>
-        <h4>artist</h4>
-    </div>
+    <div class="music-container">
+        <div class="song-info">
+            <h2 class="heading1">Now Playing:</h2>
+            <h3 id="title">song title</h3>
+            <h4 id="artist">artist</h4>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <audio src="music/El Mañana.mp3" id="audio"></audio>
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>>
 
     <div class="add-songs-button">
         <button class="add-songs-button">Add Songs</button>
