@@ -24,6 +24,37 @@ document.querySelector(".cancel").addEventListener("click", function () {
 });
 
 
+// music player
+// constants for music player
+const musicContainer = document.getElementById('music-container');
+const playBtn = document.getElementById('play');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
+const audio = document.getElementById('audio');
+const progress = document.getElementById('progress');
+const progressContainer = document.getElementById('progress-container');
+const title = document.getElementById('title');
+const cover = document.getElementById('cover');
+const currTime = document.getElementById('#currTime');
+const durTime = document.querySelector('#durTime');
+const songs = ['El Mañana', 'When Will I See You Again'];
+
+let songsIndex = 2;
+
+loadSong(songs[songsIndex]);
+
+// updates song details
+function loadSong(song) {
+    title.innerText = song;
+    audio.src = `music/${song}.mp3`;
+}
+
+// plays the song
+function playSong() {
+    
+}
+
 
 // updating the queue 
 // Sample queue (this will be replaced with backend data later)
