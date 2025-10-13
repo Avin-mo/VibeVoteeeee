@@ -72,6 +72,7 @@ h1 {
     cursor: pointer;
     padding: 10px;
     transition: transform 0.2s;
+    width: 80px;
 }
 
 .add-songs {
